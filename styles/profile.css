@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #f9eefc;
+  --secondary-color: #21132a;
+  --tertiary-color: #ed4907;
+  --text-color: #8b64ce;
+}
+
+body {
+  background-image: url(../assets/Untitled\ design\ \(2\).png);
+  font-family: 'Helvetica', Helvetica;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+}
+
+.profile-card {
+  border: none;
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 30px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+  font-family: 'Syne', sans-serif;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.btn-logout {
+  background: linear-gradient(to right, var(--tertiary-color), var(--text-color));
+  color: var(--secondary-color);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn-logout:hover {
+  background: linear-gradient(to right, var(--text-color), var(--tertiary-color));
+  transform: scale(1.01);
+}
